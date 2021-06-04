@@ -17,5 +17,20 @@ the maximum number is first.
 """
 def max_and_min(input_str):
     # Your code here
+    # char_nums = input_str.split(' ')
+    # print(char_nums)
+    #apply a map
+    # nums = list(map(int, char_nums))
+    # print(nums)
 
+    nums = [int(item) for item in input_str.split(' ')]
+    print(nums)
+    max_num = max(nums)
+    min_num = min(nums)
+    print(max_num)
+    print(min_num)
 
+    return str(max_num) + ' ' + str(min_num)
+
+my_str = "1 9 3 4 -5"
+max_and_min(my_str)

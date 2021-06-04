@@ -14,7 +14,14 @@ Notes:
 - Return an empty list if n == 0.
 """
 
-
 def last(a, n):
     # Your code here
+    if n > len(a):
+        return "invalid"
+    elif n == 0:
+        return []
 
+    return a[-n:]
+
+my_list = [3,4,5,6,2,6,7,8]
+print(last(my_list, 5))
